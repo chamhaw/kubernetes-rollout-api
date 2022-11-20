@@ -1,4 +1,4 @@
-module github.com/chamhaw/kubernetes-rollout/api
+module github.com/chamhaw/kubernetes-rollout-api
 
 go 1.19
 
