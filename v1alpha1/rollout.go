@@ -15,6 +15,6 @@ type RolloutInterface interface {
 	Create(ctx context.Context, clusterCode string, rollout *Rollout) (*Rollout, error)
 	Update(ctx context.Context, clusterCode string, rollout *Rollout) (*Rollout, error)
 	UpdateStatus(ctx context.Context, clusterCode string, rollout *Rollout) (*Rollout, error)
-	Delete(ctx context.Context, clusterCode, namespace, name string) error
+	Delete(ctx context.Context, clusterCode, namespace, name string) (*Rollout, error)
 	Get(ctx context.Context, clusterCode, namespace, name string) (*Rollout, error)
 }
